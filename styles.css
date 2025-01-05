@@ -1,0 +1,133 @@
+body{
+    background-color: black;
+    font-family: "Anton", serif;
+    overflow: hidden;  /* Disable scrolling */
+    height: 100vh;     /* Ensure the body takes up the full viewport height */
+    margin: 0;
+}
+
+.head .mainhead{
+    font-size: 3.5em;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.999);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    transition: all ease-in-out 0.3s;
+}
+
+.head .mainhead:hover{
+    text-shadow: 0px 0px 100px rgba(14, 166, 231, 0.667);
+    transform: scale(1.02);
+    color: rgb(216, 216, 215);
+}
+
+.head .subhead{
+    color: rgba(255, 255, 255, 0.999);
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px 20%;
+    font-family: "Share Tech", serif;
+    font-weight: 400;
+}
+.container{
+    margin: 60px 0 0 15%;
+    width: 70%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    
+}
+
+
+.container .img{
+    width:10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    transition: all ease-in-out 0.5s;
+    box-shadow: 10px 5px 15px rgba(207, 217, 224, 0.207);
+    cursor: pointer;
+}
+
+.container .img:hover{
+    width:25%;
+    box-shadow: 0px 0px 100px rgba(113, 195, 242, 0.426);
+}
+
+/* Video container */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Video styles */
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 125%;
+    transform: translate(-50%, -50%);
+}
+
+#footer{
+    color: white;
+    font-size: 1rem;
+    font-family: "Share Tech", serif;
+    text-align: center;
+    margin-top: 75px;
+}
+
+
+
+.movie-details {
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-details button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.movie-details button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.movie-details p,h2{
+    color: rgba(255, 255, 255, 0.999);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 10%;
+    font-family: "Share Tech", serif;
+    font-weight: 400;
+    align-items: start;
+}

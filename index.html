@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Share+Tech&display=swap" rel="stylesheet"></head>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<body>
+    <section id="header">
+        <div class="head">
+            <p class="mainhead">My Favourite Movies</p>
+            <p class="subhead">Here are some of my favorite movies, along with a brief overview. This website is a showcase of my front-end development skills, where I present these movies in an engaging and visually appealing way.</p>
+        </div>
+    </section>
+
+    <section id="background">
+        <div class="video-background">
+            <video autoplay loop muted>
+                <source src="./videos/background_vid.mp4" type="video/mp4">
+                
+                <!-- Fallback -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section>
+        <section>
+            <div class="container">
+                <img class="one img" src="./images/john.jpeg" alt="John Wick" onclick="showDetails('john-details', './images/john_wal.jpeg')">
+                <img class="two img" src="./images/Taken.jpeg" alt="Taken" onclick="showDetails('taken-details', './images/taken_wal.jpeg')">
+                <img class="three img" src="./images/interstellar.jpeg" alt="Interstellar" onclick="showDetails('interstellar-details', './images/interstellar_wal.jpeg')">
+                <img class="four img" src="./images/pursuit.jpeg" alt="The Pursuit of Happyness" onclick="showDetails('pursuit-details', './images/pursuit_wal.jpeg')">
+                <img class="five img" src="./images/Departed.jpeg" alt="The Departed" onclick="showDetails('departed-details', './images/departed_wal.jpeg')">
+                <img class="six img" src="./images/undisputed.jpeg" alt="Undisputed III: Redemption" onclick="showDetails('undisputed-details', './images/undisputed_wal.jpeg')">
+            </div>
+        </section>
+        
+    </section>
+    
+    
+
+    <section id="john-details" class="movie-details " style="display: none;">
+        <h2>John Wick (2014)</h2>
+        <p>John Wick, a retired hitman, is forced back into the criminal underworld after the death of his beloved dog, a final gift from his recently deceased wife. As he seeks vengeance, his ruthless efficiency leads to a blood-soaked chase through a world of crime and betrayal.</p>
+        <button onclick="goBack()">Go Back</button> <!-- Button to go back to homepage -->
+    </section>
+    
+    <section id="taken-details" class="movie-details" style="display: none;">
+        <h2>Taken (2008)</h2>
+        <p>When his daughter is kidnapped by a human trafficking ring during a trip to Paris, former CIA operative Bryan Mills must use his special set of skills to track down and rescue her. With limited time and resources, he embarks on a relentless mission to save her, no matter the cost.</p>
+        <button onclick="goBack()">Go Back</button>
+    </section>
+    
+    <section id="interstellar-details" class="movie-details" style="display: none;">
+        <h2>Interstellar (2014)</h2>
+        <p>In a near-future Earth ravaged by climate disaster, a team of astronauts travel through a wormhole to search for a new habitable planet for humanity. Led by former NASA pilot Joseph Cooper, their mission uncovers the mysterious nature of time and space, while Cooper struggles with his personal sacrifice and the love for his daughter left behind.</p>
+        <button onclick="goBack()">Go Back</button>
+    </section>
+    
+    <section id="pursuit-details" class="movie-details" style="display: none;">
+        <h2>The Pursuit of Happyness (2006)</h2>
+        <p>Based on the true story of Chris Gardner, this inspirational film follows his journey from homelessness to becoming a successful stockbroker. While raising his young son, Chris faces overwhelming odds, but his determination to provide a better life for them both leads to eventual success.</p>
+        <button onclick="goBack()">Go Back</button>
+    </section>
+    
+    <section id="departed-details" class="movie-details" style="display: none;">
+        <h2>The Departed (2006)</h2>
+        <p>In this intense crime thriller, an undercover cop and a mole in the police force are trying to identify each other while infiltrating an Irish gang in Boston. With betrayal, deception, and high stakes, both sides race against time to uncover the other's identity before it's too late.</p>
+        <button onclick="goBack()">Go Back</button>
+    </section>
+    
+    <section id="undisputed-details" class="movie-details" style="display: none;">
+        <h2>Undisputed III: Redemption (2010)</h2>
+        <p>George "Iceman" Chambers, a former world heavyweight boxing champion, is imprisoned in a Russian jail, where he must face the ruthless champion Yuri Boyka in an underground fight. As he fights for his survival and freedom, he learns about redemption, strength, and the true meaning of victory.</p>
+        <button onclick="goBack()">Go Back</button>
+    </section>
+    
+
+    <section id="footer">
+        <p>2025 My Website. All rights reserved.</p>
+    </section>
+    
+    <script src="index.js"></script>
+
+</body>
+</html>
